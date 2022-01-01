@@ -54,7 +54,7 @@
     "react-icons": "^3.10.0",
     "react-intersection-observer": "^8.26.2",
     "react-markdown": "^5.0.3",
-    "react-scroll": "^1.8.0",
+    "react-scroll": "1.8.4",
     "react-use-mailchimp": "^0.4.0",
     "theme-ui": "^0.3.1",
     "three": "^0.125.0",

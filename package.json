@@ -29,7 +29,7 @@
     "@radix-ui/react-id": "^0.0.2",
     "@sanity/client": "^2.2.6",
     "@sanity/image-url": "^0.140.22",
-    "@sindresorhus/slugify": "^1.1.0",
+    "@sindresorhus/slugify": "1.1.2",
     "classnames": "^2.2.6",
     "formidable-serverless": "^1.1.1",
     "globby": "11.0.4",

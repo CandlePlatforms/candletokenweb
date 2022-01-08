@@ -12,7 +12,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 
-const HomePage = ({ youtubeVideos, totalActiveStake }) => {
+function HomePage({ youtubeVideos, totalActiveStake }): any {
   const router = useRouter();
   const { t } = useTranslation(["home"]);
 
@@ -42,7 +42,7 @@ const HomePage = ({ youtubeVideos, totalActiveStake }) => {
       <HomeHero
         title={router.locale !== "en" && t("page-home-title")}
         subtitle={t("page-home-intro")}
-        cta={t("page-home-get-started")} videoLabel={undefined}      />
+        cta={t("page-home-get-started")} videoLabel={undefined} />
       <LetLivepeerDoSection
         label={t("page-home-get-started")}
         title={t("page-home-what-role")}
@@ -58,33 +58,23 @@ const HomePage = ({ youtubeVideos, totalActiveStake }) => {
         products={{
           title: t("page-home-products"),
           description: t("page-home-products-text"),
-        }}
-      />
-      <PrimerBanner
-        label={t("page-home-primer")}
-        title={t("page-home-primer-title")}
-        subtitle={t("page-home-primer-text")}
-        ctaText={t("page-home-primer-cta")}
-      />
+        }} />
       <ByTheNumbersSection
         title={t("page-home-stats-title")}
         subtitle={t("page-home-stats-text")}
         label={t("page-home-stats")}
-        totalActiveStake={totalActiveStake}
-      />
+        totalActiveStake={totalActiveStake} />
       <CommunitySection
         title={t("page-home-communities-title")}
         subtitle={t("page-home-communities-text")}
-        label={t("page-home-communities")}
-      />
+        label={t("page-home-communities")} />
       <HaveACallSection
         title={t("page-home-call")}
         subtitle={t("page-home-call-text")}
         ctaText={t("page-home-call-cta")}
-        youtubeVideos={youtubeVideos}
-      />
+        youtubeVideos={youtubeVideos} />
     </PageLayout>
   );
-};
+}
 
 export default HomePage;

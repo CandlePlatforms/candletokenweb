@@ -55,7 +55,7 @@ const HomePage = ({ youtubeVideos, totalActiveStake }) => {
           title: t("page-home-developers"),
           description: t("page-home-developers-text"),
         }}
-        products={{
+        videoMiners={{
           title: t("page-home-products"),
           description: t("page-home-products-text"),
         }}

@@ -36,7 +36,7 @@ const Primer = ({ data }) => {
       title: t("page-primer-meta-title"),
       description: t("page-primer-meta-description"),
       url: "https://candelabs.org/primer",
-      siteName: "Candle.org",
+      siteName: "CandleLabs.org",
       image: "https://candelabs.org/images/primer/share-image.jpg",
       twitterUsername: "@Candle_Labs",
     },

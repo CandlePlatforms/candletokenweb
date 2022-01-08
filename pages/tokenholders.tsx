@@ -24,7 +24,7 @@ const TokenholdersPage = ({
       title: t("page-tokenholders-meta-title"),
       description: t("page-tokenholders-meta-description"),
       url: "https://candelabs.org/tokenholders",
-      siteName: "Candle.org",
+      siteName: "CandleLabs.org",
       image: "https://candelabs.org/go.png",
       twitterUsername: "@Candle_Labs",
     },

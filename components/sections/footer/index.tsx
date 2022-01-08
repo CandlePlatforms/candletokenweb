@@ -64,7 +64,7 @@ const Footer = ({
         },
         {
           label: t("nav-the-whitepaper"),
-          href: "https://github.com/CandlePlatforms/wiki/blob/master/WHITEPAPER.md",
+          href: "https://github.com/CandlePlatforms/wiki/WHITEPAPER.md",
           isExternal: true,
         },
         { label: t("nav-faq"), href: "/faq" },
@@ -106,7 +106,7 @@ const Footer = ({
       ],
     },
     {
-      title: t("nav-about-livepeer"),
+      title: t("nav-about-candle"),
       items: [
         { label: t("nav-about"), href: "/about" },
         { label: "Jobs", href: "/jobs" },

@@ -180,7 +180,7 @@ const posts: Post[] = [
   {
     title: "CoinMarketCap",
     description:
-      "LPT price, marketcap, charts and info",
+      "CNDL price, marketcap, charts and info",
     subtitle: "",
     link: {
       href: "https://coinmarketcap.com/currencies/livepeer/",
@@ -225,7 +225,7 @@ const posts: Post[] = [
     subtitle: "Custodial exchange",
     link: {
       href:
-        "https://www.kraken.com/prices/lpt-livepeer-price-chart/usd-us-dollar?interval=1m",
+        "https://www.kraken.com/prices/CNDL-livepeer-price-chart/usd-us-dollar?interval=1m",
       isExternal: true,
     },
     category: categories[2],
@@ -252,7 +252,7 @@ const posts: Post[] = [
     title: "Matcha",
     subtitle: "Non-custodial exchange",
     link: {
-      href: "https://matcha.xyz/markets/LPT/ETH",
+      href: "https://matcha.xyz/markets/CNDL/ETH",
       isExternal: true,
     },
     category: categories[2],
@@ -293,7 +293,7 @@ const posts: Post[] = [
     title: "OKEx",
     subtitle: "Custodial exchange (Asia only)",
     link: {
-      href: "https://www.okex.com/trade-spot/lpt-usdt",
+      href: "https://www.okex.com/trade-spot/CNDL-usdt",
       isExternal: true,
     },
     category: categories[2],

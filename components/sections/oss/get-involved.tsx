@@ -17,7 +17,7 @@ const listItems: ListItemProps[] = [
       <>
         Read the{" "}
         <A
-          href="https://github.com/CandlePlatforms/livepeerjs/blob/master/CONTRIBUTING.md"
+          href="https://github.com/CandlePlatforms/candlejs/blob/master/CONTRIBUTING.md"
           target="_blank"
           rel="noopener noreferrer"
           variant="accent"

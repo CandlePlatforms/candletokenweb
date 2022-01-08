@@ -57,11 +57,11 @@ const Nav = ({ background, isInmersive, isPrimer = false }: NavProps) => {
   }, [handleScroll]);
 
   const topNotification: TopNotificationProps = {
-    title: "The Candle Roadmap — 2021 And Beyond",
+    title: "The Candle Roadmap — 2022 And Beyond",
     link: {
       label: t("read-post"),
       href:
-        "https://medium.com/@candlelabs/the-livepeer-roadmap-2021-and-beyond-5281776e9b3d",
+        "https://medium.com/@candlelabs/the-candle-roadmap-2022-and-beyond",
       isExternal: true,
     },
   };
@@ -315,7 +315,7 @@ const Nav = ({ background, isInmersive, isPrimer = false }: NavProps) => {
                 {t("nav-get-started")}
               </Button>
               <Text sx={{ fontSize: "14px", textAlign: "center" }}>
-                © Candle, Inc. {new Date().getFullYear()}
+                © Candle Labs, Inc. {new Date().getFullYear()}
               </Text>
             </Flex>
           </Container>

@@ -49,7 +49,7 @@ const MobileJumpInSlider = () => {
     {
       title: "Tokenholders",
       description:
-        "Help improve and secure the Candle network by acquiring and staking LPT. Earn ETH and LPT rewards in exchange.",
+        "Help improve and secure the Candle network by acquiring and staking CNDL. Earn ETH and CNDL rewards in exchange.",
       linkProps: {
         link: {
           label: "/tokenholders",
@@ -62,7 +62,7 @@ const MobileJumpInSlider = () => {
     {
       title: "Products",
       description:
-        "Transcode video on your infrastructure as a video miner in exchange for ETH and LPT rewards.",
+        "Transcode video on your infrastructure as a video miner in exchange for ETH and CNDL rewards.",
       linkProps: {
         link: {
           label: "/products",

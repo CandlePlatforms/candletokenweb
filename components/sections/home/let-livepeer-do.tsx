@@ -8,7 +8,7 @@ import GpuSvg from "components/svgs/gpu";
 const LetLivepeerDoSection = ({
   developers,
   tokenholders,
-  videoMiners,
+  products,
   label,
   title,
   subtitle,
@@ -30,8 +30,8 @@ const LetLivepeerDoSection = ({
     },
     {
       icon: <GpuSvg style={{ width: 28, height: 28 }} />,
-      title: videoMiners.title,
-      description: videoMiners.description,
+      title: products.title,
+      description: products.description,
       linkProps: { link: { label: "/products", href: "/products" } },
       isClickable: true,
     },

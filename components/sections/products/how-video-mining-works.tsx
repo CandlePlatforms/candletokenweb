@@ -2,7 +2,7 @@ import { Box, Container, Grid, Heading } from "theme-ui";
 import NodesSvg from "components/svgs/nodes";
 import BlockchainSvg from "components/svgs/blockchain";
 
-const HowVideoMiningWorksSection = ({ title, text1, text2 }) => (
+const HowProductsWorksSection = ({ title, text1, text2 }) => (
   <Box sx={{ bg: "text", position: "relative", zIndex: "general" }}>
     <Container variant="section" sx={{ py: ["80px", null, null, "160px"] }}>
       <Grid columns={[1, null, 2]} gap={4} sx={{ alignItems: "center" }}>
@@ -41,4 +41,4 @@ const HowVideoMiningWorksSection = ({ title, text1, text2 }) => (
   </Box>
 );
 
-export default HowVideoMiningWorksSection;
+export default HowProductsWorksSection;

@@ -32,7 +32,7 @@ const PrivacyPolicyPage = () => (
         Policy to describe to you our practices regarding the Personal Data (as
         defined below) we collect from users of this user registration website
         (the <b>"Site"</b>). The purpose (the <b>"Purpose"</b>) of this Site is
-        to allow you to register to receive Candle tokens (<b>"LPT"</b>)
+        to allow you to register to receive Candle tokens (<b>"CNDL"</b>)
         solely for use on the Candle network (the <b>"Network"</b>) as a
         staking token (which is explained in more detail in our participation
         agreement at candelabs.org/participation-agreement (the{" "}
@@ -348,7 +348,7 @@ const PrivacyPolicyPage = () => (
       </Text>
       <Text as="p">
         <b>27. Email Communications.</b> We will periodically send you e-mails
-        that directly promote the LPT or the Site. When you receive promotional
+        that directly promote the CNDL or the Site. When you receive promotional
         communications from us, you may indicate a preference to stop receiving
         further communications from us and you will have the opportunity to
         "opt-out" by following the unsubscribe instructions provided in the
@@ -374,7 +374,7 @@ const PrivacyPolicyPage = () => (
         commercially reasonable efforts to honor your request. We may retain an
         archived copy of your records as required by law or for legitimate
         business purposes. If you request a modification of any Personal Data,
-        we may not be able to provide you with LPT.
+        we may not be able to provide you with CNDL.
       </Text>
       <Text as="p">
         <b>30. Transfer of Personal Information Outside the EEA.</b> Your

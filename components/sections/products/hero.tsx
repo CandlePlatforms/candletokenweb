@@ -9,7 +9,7 @@ const lines: AnimatedLineProps[] = [
     frames: [
       {
         text:
-          "livepeer -orchestrator -transcoder -network mainnet -pricePerUnit 10000",
+          "CNDL -orchestrator -transcoder -network mainnet -pricePerUnit 10000",
         isBold: true,
       },
     ],
@@ -39,7 +39,7 @@ const lines: AnimatedLineProps[] = [
   {
     frames: [
       {
-        text: "***Candle is in Orchestrator Mode***",
+        text: "***Candle is in Gloa Mode***",
       },
     ],
     delay: 200,

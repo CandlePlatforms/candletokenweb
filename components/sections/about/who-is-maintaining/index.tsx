@@ -16,13 +16,13 @@ const WhoIsMaintainingSection = ({
 }) => {
   const livepeerMaintainers: MaintainerProps[] = [
     {
-      name: "Candle",
+      name: "Adam Soffer",
       position: role1,
       avatar: {
         src:
-          "https://github.com/candleplatforms/docs/logo.png",
+          "https://avatars3.githubusercontent.com/u/555740?s=460&u=af1ec022281bf42faadde807895f47230583c0d8&v=4",
       },
-      githubHref: "https://github.com/candleplatforms",
+      githubHref: "https://github.com/adamsoffer",
     },
   ];
 

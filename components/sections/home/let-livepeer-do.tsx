@@ -5,14 +5,9 @@ import { FiCode } from "react-icons/fi";
 import TokenSvg from "components/svgs/token";
 import GpuSvg from "components/svgs/gpu";
 
-const LetLivepeerDoSection = ({
-  developers,
-  tokenholders,
-  videoMiners,
-  label,
-  title,
-  subtitle,
-}) => {
+function LetLivepeerDoSection({
+  developers, tokenholders, products, label, title, subtitle,
+}): any {
   const cards: IconCardProps[] = [
     {
       icon: <FiCode />,
@@ -30,8 +25,8 @@ const LetLivepeerDoSection = ({
     },
     {
       icon: <GpuSvg style={{ width: 28, height: 28 }} />,
-      title: videoMiners.title,
-      description: videoMiners.description,
+      title: products.title,
+      description: products.description,
       linkProps: { link: { label: "/products", href: "/products" } },
       isClickable: true,
     },
@@ -63,6 +58,6 @@ const LetLivepeerDoSection = ({
       </Grid>
     </SectionLayout>
   );
-};
+}
 
 export default LetLivepeerDoSection;

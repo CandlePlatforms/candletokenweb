@@ -28,9 +28,9 @@ const HomePage = ({ youtubeVideos, totalActiveStake }) => {
       title: t("page-home-meta-title"),
       description: t("page-home-meta-description"),
       url: "https://CandleLabs.org",
-      siteName: "CandleLabs.org",
+      siteName: "Candle.org",
       image: "https://candelabs.org/go.png",
-      twitterUsername: "@Candle_Labs",
+      twitterUsername: "@CandleLabs",
     },
   };
 
@@ -42,7 +42,9 @@ const HomePage = ({ youtubeVideos, totalActiveStake }) => {
       <HomeHero
         title={router.locale !== "en" && t("page-home-title")}
         subtitle={t("page-home-intro")}
-        cta={t("page-home-get-started")} videoLabel={undefined}      />
+        cta={t("page-home-get-started")}
+        videoLabel={t("page-home-live")}
+      />
       <LetLivepeerDoSection
         label={t("page-home-get-started")}
         title={t("page-home-what-role")}
@@ -86,5 +88,31 @@ const HomePage = ({ youtubeVideos, totalActiveStake }) => {
     </PageLayout>
   );
 };
+
+export async function getStaticProps({ locale }) {
+  let youtubeVideos = [];
+
+  if (process.env.YOUTUBE_API_KEY) {
+    const response = await fetch(
+      `https://www.googleapis.com/youtube/v3/playlistItems?maxResults=100&part=snippet&playlistId=PLkw6hm1fcjtEo9HydrGKP2R_NHhSu1Mpl&key=${process.env.YOUTUBE_API_KEY}`
+    );
+
+    const youtubeData = await response.json();
+    youtubeVideos = youtubeData.items;
+  }
+
+  const { totalActiveStake } = await getProtocolStatistics();
+
+  return {
+    props: {
+      youtubeVideos: youtubeVideos.filter(
+        (v) => v.snippet.title !== "Deleted video"
+      ),
+      totalActiveStake,
+      ...(await serverSideTranslations(locale, ["common", "home"])),
+    },
+    revalidate: 1,
+  };
+}
 
 export default HomePage;

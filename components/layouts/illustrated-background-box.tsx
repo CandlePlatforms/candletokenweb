@@ -1,11 +1,11 @@
-import { Box, SxStyleProp, BoxProps } from "theme-ui";
+import { Box, SxStyleProp, Box } from "theme-ui";
 import { forwardRef } from "react";
 
 type Props = {
   pushSx?: SxStyleProp;
   pushContentSx?: SxStyleProp;
-  contentProps?: BoxProps;
-} & BoxProps;
+  contentProps?: Box;
+} & Box;
 
 const IllustratedBackgroundBox = forwardRef(
   (

@@ -1,12 +1,12 @@
 /** @jsx jsx */
-import { jsx, Box, Text, BoxProps, SxStyleProp } from "theme-ui";
+import { jsx, Box, Text, Box, SxStyleProp } from "theme-ui";
 
 export type ListItemProps = {
   icon: React.ReactNode;
   children: React.ReactNode;
   gap?: string | number | string[];
   pushSx?: SxStyleProp;
-} & BoxProps;
+} & Box;
 
 const ListItem: React.FC<ListItemProps> = ({
   icon,
